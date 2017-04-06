@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QQ - Bookmarker</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/navbar-color.css" rel='stylesheet'>
+  </head>
+
+  <body onload="fetchBookmarks()">
+    <nav class="navbar navbar-default">
+     <div class="container">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="#">QQ - Bookmarker</a>
+       </div>
+       <div id="navbar" class="collapse navbar-collapse">
+         <ul class="nav navbar-nav">
+           <li class="active"><a href="#">Bookmarker</a></li>
+           <li><a href="#about">Info </a></li>
+         </ul>
+       </div><!--/.nav-collapse -->
+     </div>
+   </nav>
+
+
+
+    <div class="container">
+      <div class="col-sm-6">
+
+      <div class="header clearfix">
+
+        <h3>Bookmarker</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h2>Bookmark Your Favorite Sites</h2>
+        <form id="myForm">
+          <div class="form-group">
+            <label>Site Name</label>
+            <input type="text" class="form-control" id="siteName" placeholder="Website Name">
+          </div>
+          <div class="form-group">
+            <label>Site URL</label>
+            <input type="text" class="form-control" id="siteUrl" placeholder="Website URL">
+          </div>
+          <button type="submit" class="btn btn-danger" id='submit_button'>Submit</button>
+        </form>
+      </div>
+
+    <hr>
+          <footer class="footer">
+            <p>&copy; 2016 Bookmarker, Quinten Lenaerts.</p>
+          </footer>
+        </div>
+
+      <!-- /container -->
+    <div class="col-sm-6">
+
+      <div class="row marketing">
+        <div class="header clearfix">
+
+          <h3>Bookmarks</h3>
+        </div>
+
+          <div id="bookmarksResults"></div>
+
+      </div>
+    </div>
+  </div>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
